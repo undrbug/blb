@@ -170,7 +170,6 @@ header {
     justify-content: center;
 }
 
-/* home */
 section#nosotros, #servicios {
     /* height: calc(100vh - 170px); */
     display: flex;
@@ -197,7 +196,7 @@ section#nosotros, #servicios {
 
 footer {
     width: 80%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 2rem auto;
     background-color: rgb(182, 171, 171);
     border-radius: 5px;
