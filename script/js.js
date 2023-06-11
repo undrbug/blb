@@ -10,6 +10,7 @@ toggleBtnIcon.onclick = function () {
 }
 
 
+
 // let slideIndex = 0;
 // showSlides();
 

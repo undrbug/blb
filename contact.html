@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/contact.css">
+    <!-- <link rel="stylesheet" href="./style/normalize.css"> -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
+        integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="./images/codo_A_codo.ico">
+        <title>Codo_A_Codo</title>
+    </head>
+<header>
+    <div class="navbar">
+        <!-- <div class="logo"><a href="#"><img src="./images/blb.png" alt=""></a></div> -->
+        <div class="logo"><img src="./images/blb.png" alt=""></div>
+        <ul class="links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href=#nosotros>Nosotros</a></li>
+            <li><a href=#servicios>Servicios</a></li>
+            <li><a href="Contacto" class="active">Contacto</a></li>
+        </ul>
+        <a href="#" class="action_btn">Ger Started</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <div class="dropdown_menu open">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href=#nosotros>Nosotros</a></li>
+        <li><a href=#servicios>Servicios</a></li>
+        <li><a href="/contact.html">Contacto</a></li>
+        <li><a href="#" class="action_btn">En construccion</a></li>
+    </div>
+</header>
+
+<main>
+
+    <form id="myForm">
+        <h2>Ponete en contacto con nosotros</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea name="mensaje" id="mensaje" cols="60" rows="8" required></textarea>
+
+        <button type="submit" id="btn">Enviar</button>
+    </form>
+    
+
+    
+</main>
+
+<div class="whatsapp-wrapper">
+    <a href="https://wa.me/3764338794?text='Hola, buenos dias. '" class="whatsapp" target="_blank"> <i
+        class="fa fa-whatsapp whatsapp-icon"></i></a>
+    </div>
+
+<footer>
+    <p>Encontranos en:</p>
+    <!-- Redes sociales -->
+    <section class="buttons">
+        <a href="https://www.facebook.com/BLBIngenieriaIndustrial?mibextid=ZbWKwL" target="_blank"
+            class="fa fa-facebook"></a>
+        <a href="https://goo.gl/maps/WYBwT4AA5JVDVuFz5" target="_blank" class="fa fa-map-marker"></a>
+        <a href="https://www.instagram.com/blb_ingenieriaindustrial/" target="_blank" class="fa fa-instagram"></a>
+    </section>
+
+    <p>Derechos Reservados!</p>
+    <p>2023</p>
+</footer>
+
+<script src="./script/contact.js"></script>
+
+
+
+</html>
