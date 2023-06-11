@@ -14,14 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
     form.addEventListener("submit", (event) => {
         event.preventDefault(); 
         btn.innerText = "Enviando...";
-        console.log(btn.value);
         setTimeout(() => {
             setTimeout(() => {
                 btn.innerText = "Enviado!"
             }, 1000);
-            console.log(btn.value);
             form.reset();
+            setTimeout(() => {
+                btn.innerText = "Enviar"
+            }, 2000);
         }, 2000);
     });
 });
-
