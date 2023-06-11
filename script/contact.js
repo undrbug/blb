@@ -10,15 +10,16 @@
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("myForm");
     const btn = document.getElementById("btn");
+    const hidden = document.getElementById("hidden");
     form.addEventListener("submit", (event) => {
         event.preventDefault(); 
-        
-        // alert("formulario enviado");
-        
-        btn.disabled = true;
-
+        btn.innerText = "Enviando...";
+        console.log(btn.value);
         setTimeout(() => {
-            btn.disabled = false;
+            setTimeout(() => {
+                btn.innerText = "Enviado!"
+            }, 1000);
+            console.log(btn.value);
             form.reset();
         }, 2000);
     });
