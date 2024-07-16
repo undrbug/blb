@@ -1,6 +1,6 @@
 .wrapper {
-  max-width: 80%;
-  margin: 1rem auto;
+  max-width: 100%;
+  margin: 10px auto;
   position: relative;
 }
 
@@ -110,7 +110,8 @@ article img {
 
 /* Slider Styling */
 .slider-wrapper {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   overflow: hidden;
   border-radius: 5px;
   box-shadow: 1px 1px 4px #666;

@@ -12,21 +12,21 @@
 }
 
 body {
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #000;
     /* background-image: url(); */
     background-size: cover;
     /* background-position: center; */
 }
 
-.logo {
+/* .logo {
     margin-left: 0;
-}
+} */
 
 .logo img {
     margin: 0%;
     align-self: flex-start;
-    width: 120px;
+    width: 8rem;
 }
 
 a {
@@ -49,7 +49,7 @@ a:hover {
 
 header {
     position: relative;
-    padding: 25px 2rem;
+    margin: 2rem auto;
 }
 
 .navbar {
@@ -126,7 +126,7 @@ header {
     font-size: 0.8rem;
     font-weight: bold;
     cursor: pointer;
-    transition: scale 0.2 ease;
+    transition: scale 0. ease;
     text-align: center;
 }
 
@@ -187,11 +187,11 @@ section#nosotros, #servicios {
 }
 
 #nosotros p, #servicios p {
-    margin: 10px auto;
+    margin: 10px 4rem;
 }
 
 #servicios h3 {
-    margin: 15px 10px 5px 5px;
+    margin: 15px 5px 5px 15px;
 
 }
 
@@ -210,16 +210,14 @@ h2 {
 #servicios h2 {
     width: 80%;
     font-size: 2.5rem;
-    margin-top: 5rem;
-    margin-bottom: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
 }
 
-#nosotros p, #servicios p {
-    padding: 10px 20% 0% 20%;
-}
+
 
 footer {
-    width: 80%;
+    width: 100%;
     /* max-width: 1200px; */
     margin: 2rem auto;
     background-color: rgb(73, 71, 71);
