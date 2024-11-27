@@ -265,6 +265,7 @@ form button:hover {
 }
 
 @media (max-width: 600px) {
+
     .logo img {
         width: 80px;
     }
@@ -273,6 +274,14 @@ form button:hover {
         width: 50px;
         height: 50px;
         font-size: 24px;
+    }
+
+    body {
+        height: 100vh;
+        background-color: var(--bg-color);
+        background-size: cover;
+        overflow-x: hidden;
+        padding: 0;
     }
 
     section h1 {
@@ -295,5 +304,5 @@ form button:hover {
 
     section p {
     font-size: 1em;
-}
+    }
 }
