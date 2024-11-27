@@ -1,191 +1,232 @@
 <!DOCTYPE html>
 <html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <link rel="stylesheet" href="./style/normalize.css" /> -->
+		<link rel="stylesheet" href="./style/style.css" />
+		<link rel="stylesheet" href="./style/slider.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
+			integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="shortcut icon" href="./images/blb.png" />
+		<title>BLB</title>
+	</head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./style/normalize.css">
-	<link rel="stylesheet" href="./style/style.css">
-	<link rel="stylesheet" href="./style/slider.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
-		integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="shortcut icon" href="./images/blb.png">
-	<title>BLB</title>
-</head>
-<header>
-	<div class="navbar">
-		<!-- <div class="logo"><a href="#"><img src="./images/blb.png" alt=""></a></div> -->
-		<div class="logo">
-			<a href="./index.html">
-				<img src="./images/blb.png" alt="imagen del logo de BLB ingenieria industrial">
-			</a>
-		</div>
-		<ul class="links">
-			<li><a href="./index.html" class="active">Inicio</a></li>
-			<li><a href="./index.html#nosotros">Nosotros</a></li>
-			<li><a href="./index.html#servicios">Nuestros Servicios</a></li>
-			<li><a href="./contact.html">Contacto</a></li>
-		</ul>
-		<a href="#" class="action_btn">Ger Started</a>
-		<div class="toggle_btn">
-			<i class="fa-solid fa-bars"></i>
-		</div>
-	</div>
-
-	<div class="dropdown_menu">
-		<li><a href="./index.html" class="active">Inicio</a></li>
-		<li><a href="./index.html#nosotros">Nosotros</a></li>
-		<li><a href="./index.html#servicios">Nuestros Servicios</a></li>
-		<li><a href="./contact.html">Contacto</a></li>
-		<li><a href="#" class="action_btn">En construccion</a></li>
-	</div>
-</header>
-
-<main>
-
-	<div class="wrapper">
-		<input checked type=radio name="slider" id="slide1" />
-		<input type=radio name="slider" id="slide2" />
-		<input type=radio name="slider" id="slide3" />
-		<input type=radio name="slider" id="slide4" />
-
-		<div class="slider-wrapper">
-			<div class=inner>
-				<article>
-					<div class="info bottom-right">
-						<a href="#analisis">
-							<!-- <h2>analisis uno</h2> -->
-						</a>
-					</div>
-					<img src="./images/img1.jpg" />
-				</article>
-
-				<article>
-					<div class="info bottom-right">
-						<a href="#analisis">
-							<!-- <h2>analisis dos</h2> -->
-						</a>
-					</div>
-					<img src="./images/img3.jpg" />
-				</article>
-
-				<article>
-					<div class="info bottom-right">
-						<a href="#analisis">
-							<!-- <h2>analisis tres</h2> -->
-						</a>
-					</div>
-					<img src="./images/img4.jpg" />
-				</article>
-
-				<article>
-					<div class="info bottom-right">
-						<a href="#analisis">
-							<!-- <h2>analisis cuatro</h2> -->
-						</a>
-					</div>
-					<img src="./images/img1.jpg" />
-				</article>
-
+	<body>
+		<header>
+			<div class="navbar">
+				<!-- <div class="logo"><a href="#"><img src="./images/blb.png" alt=""></a></div> -->
+				<div class="logo">
+					<a href="./index.html">
+						<img
+							src="./images/blb.png"
+							alt="imagen del logo de BLB ingenieria industrial" />
+					</a>
+				</div>
+				<ul class="links">
+					<li><a href="./index.html" class="active">Inicio</a></li>
+					<li><a href="./index.html#nosotros">Nosotros</a></li>
+					<li>
+						<a href="./index.html#servicios">Nuestros Servicios</a>
+					</li>
+					<li><a href="./contact.html">Contacto</a></li>
+				</ul>
+				<a href="#" class="action_btn">Ger Started</a>
+				<div class="toggle_btn">
+					<i class="fa-solid fa-bars"></i>
+				</div>
 			</div>
-			<!-- .inner -->
+
+			<div class="dropdown_menu">
+				<li><a href="./index.html" class="active">Inicio</a></li>
+				<li><a href="./index.html#nosotros">Nosotros</a></li>
+				<li><a href="./index.html#servicios">Nuestros Servicios</a></li>
+				<li><a href="./contact.html">Contacto</a></li>
+				<li><a href="#" class="action_btn">En construccion</a></li>
+			</div>
+		</header>
+
+		<main>
+			<div class="wrapper">
+				<input checked type="radio" name="slider" id="slide1" />
+				<input type="radio" name="slider" id="slide2" />
+				<input type="radio" name="slider" id="slide3" />
+				<input type="radio" name="slider" id="slide4" />
+
+				<div class="slider-wrapper">
+					<div class="inner">
+						<article>
+							<div class="info bottom-right">
+								<a href="#analisis">
+									<!-- <h2>analisis uno</h2> -->
+								</a>
+							</div>
+							<img src="./images/img1.jpg" />
+						</article>
+
+						<article>
+							<div class="info bottom-right">
+								<a href="#analisis">
+									<!-- <h2>analisis dos</h2> -->
+								</a>
+							</div>
+							<img src="./images/img3.jpg" />
+						</article>
+
+						<article>
+							<div class="info bottom-right">
+								<a href="#analisis">
+									<!-- <h2>analisis tres</h2> -->
+								</a>
+							</div>
+							<img src="./images/img4.jpg" />
+						</article>
+
+						<article>
+							<div class="info bottom-right">
+								<a href="#analisis">
+									<!-- <h2>analisis cuatro</h2> -->
+								</a>
+							</div>
+							<img src="./images/img1.jpg" />
+						</article>
+					</div>
+					<!-- .inner -->
+				</div>
+				<!-- .slider-wrapper -->
+
+				<div class="slider-prev-next-control">
+					<label for="slide1"></label>
+					<label for="slide2"></label>
+					<label for="slide3"></label>
+					<label for="slide4"></label>
+				</div>
+				<!-- .slider-prev-next-control -->
+
+				<div class="slider-dot-control">
+					<label for="slide1"></label>
+					<label for="slide2"></label>
+					<label for="slide3"></label>
+					<label for="slide4"></label>
+				</div>
+				<!-- .slider-dot-control -->
+			</div>
+
+			<section id="nosotros">
+				<h1>BLB Ingeniería Industrial</h1>
+				<p>
+					Somos un laboratorio de análisis de aguas y alimentos que
+					inició sus actividades en la ciudad de Posadas, provincia de
+					Misiones en el año 1.995, ofreciendo a los clientes
+					asesoramiento técnico, análisis de control de calidad y
+					control de procesos para sus productos.
+				</p>
+				<p>
+					Estamos abocados en brindar nuestros servicios con
+					idoneidad, responsabilidad y absoluta confiabilidad a las
+					industrias del sector alimentario de la región, que incluyen
+					cooperativas, pequeñas y medianas empresas nacionales e
+					internacionales.
+				</p>
+			</section>
+
+			<section id="servicios">
+				<h2>Nuestros Servicios</h2>
+
+				<h3>Análisis microbiológicos:</h3>
+				<p>
+					Ofrecemos rapidez e idoneidad en la entrega de resultados
+					microbiológicos, abarcando todos los indicadores de higiene
+					y patógenos posibles que se encuentren en las muestras de
+					alimentos o aguas.
+				</p>
+
+				<h3>Análisis fisicoquímicos:</h3>
+				<p>
+					Realizamos una amplia gama de determinaciones fisicoquímicas
+					que brindan poderosas herramientas para caracterizar un
+					alimento, controlar su calidad y adecuarse a las normas
+					establecidas.
+				</p>
+
+				<h3>Análisis cromatográficos:</h3>
+				<p>
+					La cromatografía es una de las principales técnicas
+					analíticas para la separación de distintas especies químicas
+					en una mezcla y es capaz de proporcionar información
+					cuantitativa sobre su composición. En BLB realizamos
+					diversas determinaciones cromatográficas en diferentes tipos
+					de alimentos.
+				</p>
+
+				<h3>Análisis de rotulado nutricional:</h3>
+				<p>
+					Ofrecemos confección de rotulado nutricional mediante el
+					desarrollo de técnicas analíticas específicas para cada tipo
+					de alimento, establecidas por el Código Alimentario
+					Argentino.
+				</p>
+
+				<h3>Capacitación para empresas:</h3>
+				<p>
+					Diseñamos planes de formación y asesoramiento adaptados a
+					las necesidades del cliente, enfocados en mejorar su
+					competencia, desarrollados en el lugar de trabajo con
+					capacitadores altamente capacitados.
+				</p>
+			</section>
+		</main>
+
+		<div class="whatsapp-wrapper">
+			<a
+				href="https://wa.me/3765059568?text='Hola, buenos dias. '"
+				class="whatsapp"
+				target="_blank">
+				<i class="fa fa-whatsapp whatsapp-icon"></i
+			></a>
 		</div>
-		<!-- .slider-wrapper -->
 
-		<div class="slider-prev-next-control">
-			<label for=slide1></label>
-			<label for=slide2></label>
-			<label for=slide3></label>
-			<label for=slide4></label>
-		</div>
-		<!-- .slider-prev-next-control -->
+		<footer>
+			<p>Tambien nos podes encontrar en:</p>
+			<!-- Redes sociales -->
+			<section class="buttons">
+				<a
+					href="https://www.facebook.com/BLBIngenieriaIndustrial?mibextid=ZbWKwL"
+					target="_blank"
+					class="fa fa-facebook"></a>
+				<a
+					href="https://goo.gl/maps/WYBwT4AA5JVDVuFz5"
+					target="_blank"
+					class="fa fa-map-marker"></a>
+				<a
+					href="https://www.instagram.com/blb_ingenieriaindustrial/"
+					target="_blank"
+					class="fa fa-instagram"></a>
+			</section>
 
-		<div class="slider-dot-control">
-			<label for=slide1></label>
-			<label for=slide2></label>
-			<label for=slide3></label>
-			<label for=slide4></label>
-		</div>
-		<!-- .slider-dot-control -->
-	</div>
-
-
-
-
-
-
-	<section id="nosotros">
-		<h1>BLB Ingeniería Industrial</h1>
-		<p>
-			Somos un laboratorio de análisis de aguas y alimentos que inició sus actividades en la ciudad de Posadas,
-			provincia de Misiones en el año 1.995, ofreciendo a los clientes asesoramiento técnico, análisis de control
-			de calidad y control de procesos para sus productos.
-		</p>
-		<p>Estamos abocados en brindar nuestros servicios con idoneidad, responsabilidad y absoluta confiabilidad a las
-			industrias del sector alimentario de la región, que incluyen cooperativas, pequeñas y medianas empresas
-			nacionales e
-			internacionales.
-		</p>
-
-	</section>
-
-	<section id="servicios">
-		<h2>Nuestros Servicios</h2>
-
-		<h3>Análisis microbiológicos:</h3>
-		<p>Ofrecemos rapidez e idoneidad en la entrega de resultados microbiológicos, abarcando todos los indicadores de
-			higiene y patógenos posibles que se encuentren en las muestras de alimentos o aguas.</p>
-
-		<h3>Análisis fisicoquímicos:</h3>
-		<p>Realizamos una amplia gama de determinaciones fisicoquímicas que brindan poderosas herramientas para
-			caracterizar un alimento, controlar su calidad y adecuarse a las normas establecidas.</p>
-
-		<h3>Análisis cromatográficos:</h3>
-		<p>La cromatografía es una de las principales técnicas analíticas para la separación de distintas especies
-			químicas en una mezcla y es capaz de proporcionar información cuantitativa sobre su composición. En BLB
-			realizamos diversas determinaciones cromatográficas en diferentes tipos de alimentos.</p>
-
-		<h3>Análisis de rotulado nutricional:</h3>
-		<p>Ofrecemos confección de rotulado nutricional mediante el desarrollo de técnicas analíticas específicas para
-			cada tipo de alimento, establecidas por el Código Alimentario Argentino.</p>
-
-		<h3>Capacitación para empresas:</h3>
-		<p>Diseñamos planes de formación y asesoramiento adaptados a las necesidades del cliente, enfocados en mejorar
-			su competencia, desarrollados en el lugar de trabajo con capacitadores altamente capacitados.</p>
-
-	</section>
-</main>
-
-<div class="whatsapp-wrapper">
-	<a href="https://wa.me/3764338794?text='Hola, buenos dias. '" class="whatsapp" target="_blank"> <i
-			class="fa fa-whatsapp whatsapp-icon"></i></a>
-</div>
-
-<footer>
-	<p>Encontranos en:</p>
-	<!-- Redes sociales -->
-	<section class="buttons">
-		<a href="https://www.facebook.com/BLBIngenieriaIndustrial?mibextid=ZbWKwL" target="_blank"
-			class="fa fa-facebook"></a>
-		<a href="https://goo.gl/maps/WYBwT4AA5JVDVuFz5" target="_blank" class="fa fa-map-marker"></a>
-		<a href="https://www.instagram.com/blb_ingenieriaindustrial/" target="_blank" class="fa fa-instagram"></a>
-	</section>
-
-	<p>Derechos Reservados!</p>
-	<p>2023</p>
-</footer>
-
-<script src="./script/js.js"></script>
-
-
-
+			<p>Derechos Reservados!</p>
+			<p>2023</p>
+		</footer>
+		<script src="./script/js.js"></script>
+	</body>
 </html>

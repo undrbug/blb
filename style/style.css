@@ -1,288 +1,249 @@
+:root {
+    --primary-color: #25d366;
+    --secondary-color: #314652;
+    --text-color: #fff;
+    --bg-color: #000;
+    --highlight-color: orange;
+    --hover-scale: 1.1;
+    --transition-speed: 0.3s;
+    --focus-color: #1e90ff;
+}
+
 * {
-    margin: 0px;
+    margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    color: #fff;
+    color: var(--text-color);
     list-style: none;
     text-decoration: none;
-    p {
-        line-height: 2em;
-    }
 }
 
 body {
     height: 100vh;
-    background-color: #000;
-    /* background-image: url(); */
+    background-color: var(--bg-color);
     background-size: cover;
-    /* background-position: center; */
+    overflow-x: hidden;
+    padding: 0 80px;
 }
 
-.logo {
-    margin-left: 0;
-}
-
-.logo img {
-    margin: 0%;
-    align-self: flex-start;
-    width: 120px;
-}
-
-a {
-    font-size: 1rem;
-    position: relative;
-}
-
-a:hover {
-    color: orange;
-}
-
-/* a:hover:after {
-    right: 0;
-} */
-
-/* a:active {
-    text-decoration: underline;
-    color: orange;
-} */
-
+/* Header */
 header {
     position: relative;
     padding: 25px 2rem;
 }
 
 .navbar {
-    /* width: 80%; */
-    height: 60px;
-    /* max-width: 1200px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 60px;
 }
 
-.navbar .logo {
-    font-size: 1.3rem;
+.logo img {
+    width: 120px;
+    transition: transform var(--transition-speed);
+}
+
+.logo img:hover {
+    transform: scale(var(--hover-scale));
 }
 
 .navbar .links {
     display: flex;
-    float: right;
     gap: 2rem;
 }
 
-/* .navbar .links ul li a {
+.navbar .links a {
+    font-size: 1rem;
     position: relative;
-} */
-
-.navbar .links li a::after,
-.navbar .links li a::before {
-    opacity: 0;
-    content: "";
-    border-bottom: 2px solid red;
-    position: absolute;
-    transition: 0.2s;
+    transition: color var(--transition-speed);
 }
 
-.navbar .links li a::after {
-    width: 30%;
-    bottom: -10px;
-    left: 0;
-}
-
-.navbar .links li a:before {
-    width: 30%;
-    bottom: -5px;
-    right: 0;
-}
-
-.navbar .links li a.active::after,
-.navbar .links li a:hover::after {
-    opacity: 1;
-    width: 80%;
-}
-
-.navbar .links li a.active::before,
-.navbar .links li a:hover::before {
-    opacity: 1;
-    width: 80%;
+.navbar .links a:hover {
+    color: var(--highlight-color);
 }
 
 .navbar .toggle_btn {
-    color: #fff;
+    display: none;
     font-size: 1.5rem;
     cursor: pointer;
-    display: none;
 }
 
+/* Action Button */
 .action_btn {
     display: none;
-    background-color: orange;
-    color: #fff;
+    background-color: var(--highlight-color);
+    color: var(--text-color);
     padding: 0.5rem 1rem;
     border: none;
-    outline: none;
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: bold;
     cursor: pointer;
-    transition: scale 0.2 ease;
-    text-align: center;
+    transition: transform var(--transition-speed);
 }
 
 .action_btn:hover {
-    scale: 1.05;
-    color: #fff;
+    transform: scale(var(--hover-scale));
 }
 
-.action_btn:active {
-    scale: 0.95;
-}
-
-/* DROPDOWN MENU */
+/* Dropdown Menu */
 .dropdown_menu {
     display: none;
     position: absolute;
     z-index: 1;
     right: 2rem;
     top: 65px;
-    height: 0px;
-    width: 300px;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(30px);
     border-radius: 10px;
     overflow: hidden;
-    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: height var(--transition-speed) ease;
 }
 
 .dropdown_menu.open {
-    height: 200px;
-
+    display: block;
+    height: auto;
+    padding: 1rem;
 }
 
 .dropdown_menu li {
     padding: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
-.dropdown_menu .action_btn {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-}
-
-section#nosotros, #servicios {
-    /* height: calc(100vh - 170px); */
+/* Sections */
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
-}
-
-#nosotros h1, p, #servicios h1, p, footer p {
+    color: var(--text-color);
     text-align: center;
+    padding: 2rem;
 }
 
-#nosotros p, #servicios p {
-    margin: 10px auto;
-}
-
-#servicios h3 {
-    margin: 15px 10px 5px 5px;
-
-}
-
-h2 {
-    margin: 20px auto;
-    text-align: center;
-}
-
-#nosotros h1 {
-    width: 80%;
-    font-size: 3rem;
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-}
-
-#servicios h2 {
-    width: 80%;
+section h1 {
     font-size: 2.5rem;
-    margin-top: 5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
-#nosotros p, #servicios p {
-    padding: 10px 20% 0% 20%;
+section p {
+    line-height: 1.8em;
+    font-size: 1.2em;
+    padding: 0 15%;
 }
 
+#servicios {
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+        margin: 3rem 0 1rem 0;
+    }
+}
+
+/* Footer */
 footer {
-    width: 80%;
-    /* max-width: 1200px; */
-    margin: 2rem auto;
     background-color: rgb(73, 71, 71);
     border-radius: 5px;
+    padding: 25px 2rem;
+    text-align: center;
 }
 
-.buttons {
-    min-width: 200px;
-    display: flex;
-    /* justify-content: space-around; */
-    justify-content: center;
-  }
-  
-  .buttons a {
-    text-decoration: none;
-    font-size: 20px;
+.buttons a {
+    font-size: 1.2rem;
     width: 40px;
     height: 40px;
     line-height: 40px;
     text-align: center;
-    background: #314652;
-    color: #f1f1f1;
+    background: var(--secondary-color);
+    color: var(--text-color);
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-    transition: all .4s ease-in-out;
-    margin: 10px 20px 20px 10px;
-  }
-  
-  .buttons a:hover {
-    transform: scale(1.5);
-  }
+    margin: 10px;
+    transition: transform var(--transition-speed);
+}
 
-  /* whatsapp button */
-  .whatsapp {
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:40px;
-    right:40px;
-    background-color:#25d366;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size:30px;
-    z-index:100;
+.buttons a:hover {
+    transform: scale(var(--hover-scale));
+}
+
+/* WhatsApp Button */
+.whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-    transition: all .4s ease-in-out;
-  }
-  
-  .whatsapp-icon {
-    margin-top:13px;
-  }
+    transition: transform var(--transition-speed);
+}
 
-  .whatsapp-wrapper a:hover {
-    transform: scale(1.3);
-  }
+.whatsapp:hover {
+    transform: scale(var(--hover-scale));
+}
 
+/* Forms */
+form {
+    width: 30rem;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+}
 
-/* RESPONSIVE DESIGN */
-@media (max-width: 850px) {
+form input,
+form textarea {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 15px;
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: border-color var(--transition-speed), background-color var(--transition-speed);
+}
 
-    .navbar .links,
-    .navbar .action_btn {
+form input:focus,
+form textarea:focus {
+    border-color: var(--focus-color);
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--focus-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+
+form button:hover {
+    background-color: #007acc;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .navbar .links {
         display: none;
     }
 
@@ -290,29 +251,49 @@ footer {
         display: block;
     }
 
-    .dropdown_menu {
-        display: block;
+    section h1 {
+        font-size: 2rem;
     }
 
-    #welcome h1 {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-        text-align: center;
+    section p {
+        padding: 0 10%;
     }
 
-    #welcome p {
-        padding: 0 20% 0% 20%;
-        text-align: center;
+    form {
+        width: 70%;
     }
 }
 
-@media (max-width: 576px) {
-    .dropdown_menu {
-        left: 2rem;
-        width: unset;
+@media (max-width: 600px) {
+    .logo img {
+        width: 80px;
     }
 
-    .logo img {
-        width: 5rem;
+    .whatsapp {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
     }
+
+    section h1 {
+        font-size: 1.8rem;
+    }
+
+    form {
+        width: 80%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    section p {
+    font-size: 1em;
+}
 }
