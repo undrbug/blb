@@ -17,7 +17,7 @@ article {
   width: 20%;
   float: left;
   position: relative;
-  height: 100vh; /* Aseguramos que ocupe el espacio completo */
+  height: 60vh; /* Aseguramos que ocupe el espacio completo */
 }
 
 img {
