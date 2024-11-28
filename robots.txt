@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://blb-ingenieriaindustrial.com.ar/sitemap.xml
