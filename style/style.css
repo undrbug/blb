@@ -194,7 +194,7 @@ footer {
     color: var(--text-color);
     border-radius: 50%;
     text-align: center;
-    font-size: 30px;
+    font-size: 24px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
     transition: transform var(--transition-speed);
 }
@@ -259,6 +259,33 @@ form button:hover {
     background-color: #007acc;
 }
 
+/* Estilo para el botón flotante */
+#scrollTopBtn {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 120px;
+    right: 40px;
+    background-color: #25d366; /* Color similar al de WhatsApp */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    /* padding: 15px; */
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Inicialmente está oculto */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#scrollTopBtn:hover {
+    background-color: #128c7e;
+}
+
+/* Margen para que el contenido no quede debajo del navbar */
+body {
+    padding-top: 60px;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .navbar .links {
@@ -289,6 +316,12 @@ form button:hover {
     }
 
     .whatsapp {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+
+    #scrollTopBtn {
         width: 50px;
         height: 50px;
         font-size: 24px;

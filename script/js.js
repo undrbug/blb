@@ -9,6 +9,27 @@ toggleBtnIcon.onclick = function () {
   toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
 }
 
+// Obtener el botón
+const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+// Mostrar el botón cuando se haga scroll hacia abajo
+window.onscroll = function () {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    scrollTopBtn.style.display = "block";  // Mostrar el botón
+  } else {
+    scrollTopBtn.style.display = "none";   // Ocultar el botón cuando está arriba
+  }
+};
+
+// Función para hacer scroll hacia arriba
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'  // Hace que el scroll sea suave
+  });
+}
+
+
 
 
 // let slideIndex = 0;
